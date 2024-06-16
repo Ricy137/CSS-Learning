@@ -4,7 +4,7 @@ export default function Home() {
     return (
         <main className="flex min-h-screen flex-col items-center justify-between p-24">
             <Image
-                className="hover:animate-[cspin_2s]"
+                className=" hover:animate-cvalish_cspin"
                 src="./vercel.svg"
                 alt="next"
                 width={40}
