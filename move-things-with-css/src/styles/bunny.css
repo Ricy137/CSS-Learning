@@ -5,8 +5,8 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    animation: jump 9s infinite;
-    animation-delay: calc(var(--index) * -2s);
+    animation: jump 0.9s infinite;
+    animation-delay: calc(var(--index) * -0.2s);
 }
 
 .bunny:nth-of-type(1) {
