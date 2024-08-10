@@ -1,0 +1,37 @@
+.bunny {
+    height: 10vmin;
+    width: 10vmin;
+    background-image: url("https://assets.codepen.io/605876/bunny-ready.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: jump 9s infinite;
+    animation-delay: calc(var(--index) * -2s);
+}
+
+.bunny:nth-of-type(1) {
+    --index: 0;
+}
+.bunny:nth-of-type(2) {
+    --index: 1;
+}
+.bunny:nth-of-type(3) {
+    --index: 2;
+}
+.bunny:nth-of-type(4) {
+    --index: 3;
+}
+.bunny:nth-of-type(5) {
+    --index: 4;
+}
+
+@keyframes jump {
+    10%,
+    90% {
+        transform: translate(0, 0) scaleX(1.1) scaleY(0.8);
+    }
+    50% {
+        background-image: url("https://assets.codepen.io/605876/bunny-jump.png");
+        transform: translate(0, -60px) scaleX(0.9) scaleY(1.2);
+    }
+}
