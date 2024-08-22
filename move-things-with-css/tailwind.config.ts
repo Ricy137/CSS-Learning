@@ -23,6 +23,23 @@ const config: Config = {
                 cvalish: {
                     "50%": {opacity: "0"},
                 },
+                backdrop: {
+                    "100%": {
+                        backgroundPositionX: "-100vw",
+                    },
+                },
+                flyIn: {
+                    "0%": {
+                        transform: "translate(-250%,250%)",
+                        scale: "0",
+                    },
+                },
+                advance: {
+                    "50%": {
+                        transform: "translate(50%,50%)",
+                        rotate: "-10deg",
+                    },
+                },
             },
         },
     },
